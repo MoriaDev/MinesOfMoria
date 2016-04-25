@@ -29,12 +29,18 @@ import com.temenoi.minesofmoria.Dungeon;
 import com.temenoi.minesofmoria.actors.hero.Hero;
 import com.temenoi.minesofmoria.actors.hero.HeroClass;
 import com.temenoi.utils.Callback;
+import com.temenoi.utils.PointF;
 
 public class HeroSprite extends CharSprite {
-	
-	private static final int FRAME_WIDTH	= 12;
-	private static final int FRAME_HEIGHT	= 15;
-	
+
+//  Replaced with higher resolutions 2016-04-24
+//	private static final int FRAME_WIDTH	= 12;
+//	private static final int FRAME_HEIGHT	= 15;
+//
+	private static final int FRAME_WIDTH	= 18;
+	private static final int FRAME_HEIGHT	= 31;
+// <--
+
 	private static final int RUN_FRAMERATE	= 20;
 	
 	private static TextureFilm tiers;
@@ -138,6 +144,8 @@ public class HeroSprite extends CharSprite {
 		
 		RectF patch = tiers().get( armorTier );
 		Image avatar = new Image( cl.spritesheet() );
+		// Update to adjust for smaller avatar...
+		avatar.scale.scale(0.5f);
 		RectF frame = avatar.texture.uvRect( 1, 0, FRAME_WIDTH, FRAME_HEIGHT );
 		frame.offset( patch.left, patch.top );
 		avatar.frame( frame );

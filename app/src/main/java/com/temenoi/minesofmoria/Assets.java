@@ -30,16 +30,28 @@ public class Assets {
 	
 	public static final String CHROME	= "chrome.png";
 	public static final String ICONS	= "icons.png";
-	public static final String STATUS	= "status_pane.png";
-	public static final String HP_BAR	= "hp_bar.png";
+//  Replaced with higher resolutions 2016-04-24
+//	public static final String STATUS	= "status_pane.png";
+//  public static final String HP_BAR	= "hp_bar.png";
+//
+	public static final String STATUS	= "status_pane-32x.png";
+// <--
+    public static final String HP_BAR	= "hp_bar-32x.png";
 	public static final String XP_BAR	= "exp_bar.png";
 	public static final String TOOLBAR	= "toolbar.png";
 	public static final String SHADOW	= "shadow.png";
-	
-	public static final String WARRIOR	= "warrior.png";
-	public static final String MAGE		= "mage.png";
-	public static final String ROGUE	= "rogue.png";
-	public static final String HUNTRESS	= "ranger.png";
+
+//  Replaced with higher resolutions 2016-04-24
+//	public static final String WARRIOR	= "warrior.png";
+//	public static final String MAGE		= "mage.png";
+//	public static final String ROGUE	= "rogue.png";
+//	public static final String HUNTRESS	= "ranger.png";
+//
+	public static final String WARRIOR	= "warrior-18x31.png";
+	public static final String MAGE		= "mage-18x31.png";
+	public static final String ROGUE	= "rogue-18x31.png";
+	public static final String HUNTRESS	= "ranger-18x31.png";
+// <--
 	public static final String AVATARS	= "avatars.png";
 	public static final String PET		= "pet.png";
 	
@@ -90,13 +102,21 @@ public class Assets {
 	
 	public static final String ITEMS	= "items.png";
 	public static final String PLANTS	= "plants.png";
-	
-	public static final String TILES_SEWERS	= "tiles0.png";
-	public static final String TILES_PRISON	= "tiles1.png";
-	public static final String TILES_CAVES	= "tiles2.png";
-	public static final String TILES_CITY	= "tiles3.png";
-	public static final String TILES_HALLS	= "tiles4.png";
-	
+
+//  Replaced with higher resolutions 2016-04-24
+//	public static final String TILES_SEWERS	= "tiles0.png";
+//	public static final String TILES_PRISON	= "tiles1.png";
+//	public static final String TILES_CAVES	= "tiles2.png";
+//	public static final String TILES_CITY	= "tiles3.png";
+//	public static final String TILES_HALLS	= "tiles4.png";
+//
+	public static final String TILES_SEWERS	= "tiles0-32x.png";
+	public static final String TILES_PRISON	= "tiles1-32x.png";
+	public static final String TILES_CAVES	= "tiles2-32x.png";
+	public static final String TILES_CITY	= "tiles3-32x.png";
+	public static final String TILES_HALLS	= "tiles4-32x.png";
+// <--
+
 	public static final String WATER_SEWERS	= "water0.png";
 	public static final String WATER_PRISON	= "water1.png";
 	public static final String WATER_CAVES	= "water2.png";

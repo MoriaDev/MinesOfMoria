@@ -79,7 +79,7 @@ public class StatusPane extends Component {
 					Camera.main.focusOn( sprite );
 				}
 				GameScene.show( new WndHero() );
-			};			
+			}
 		} );
 		
 		btnMenu = new MenuButton();
@@ -136,13 +136,20 @@ public class StatusPane extends Component {
 		height = 32;
 		
 		shield.size( width, shield.height );
-		
-		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width / 2 );
-		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height / 2 );
-		
-		compass.x = avatar.x + avatar.width / 2 - compass.origin.x;
-		compass.y = avatar.y + avatar.height / 2 - compass.origin.y;
-		
+//  Replaced with higher resolutions 2016-04-24
+//		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width / 2 );
+//		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height / 2 );
+//
+//		compass.x = avatar.x + avatar.width / 2 - compass.origin.x;
+//		compass.y = avatar.y + avatar.height / 2 - compass.origin.y;
+//
+		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width / 4 );
+		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height / 4 );
+
+		compass.x = avatar.x + avatar.width / 4 - compass.origin.x;
+		compass.y = avatar.y + avatar.height / 4 - compass.origin.y;
+// <--
+
 		hp.x = 30;
 		hp.y = 3;
 		
